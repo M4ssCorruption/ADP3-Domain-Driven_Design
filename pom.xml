@@ -12,7 +12,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.junit</groupId>
@@ -27,6 +26,7 @@
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
         <dependency>
