@@ -1,34 +1,31 @@
 package za.ac.cput.Entity;
 
 public class User {
-    private String flightId;
-    private String email;
+    private String userId;
     private String firstName;
     private String lastName;
-    private String userIdNumber;
+    private String email;
+    private String ticketId;
+    private int ticketsBought;
+    private int bookedSeats;
+
 
     private  User(Builder builder){
-        this.flightId=builder.flightId;
-        this.email=builder.email;
+        this.userId=builder.userId;
         this.firstName=builder.firstName;
         this.lastName=builder.lastName;
-        this.userIdNumber=builder.userIdNumber;
+        this.email=builder.email;
+        this.ticketId=builder.ticketId;
+        this.ticketsBought=builder.ticketsBought;
+        this.bookedSeats=builder.bookedSeats;
     }
 
-    public String getFlightId() {
-        return flightId;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setFlightId(String flightId) {
-        this.flightId = flightId;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getFirstName() {
@@ -47,40 +44,63 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getUserIdNumber() {
-        return userIdNumber;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserIdNumber(String userIdNumber) {
-        this.userIdNumber = userIdNumber;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTicketId() {
+        return ticketId;
+    }
+
+    public void setTicketId(String ticketId) {
+        this.ticketId = ticketId;
+    }
+
+    public int getTicketsBought() {
+        return ticketsBought;
+    }
+
+    public void setTicketsBought(int ticketsBought) {
+        this.ticketsBought = ticketsBought;
+    }
+
+    public int getBookedSeats() {
+        return bookedSeats;
+    }
+
+    public void setBookedSeats(int bookedSeats) {
+        this.bookedSeats = bookedSeats;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "flightId='" + flightId + '\'' +
-                ", email='" + email + '\'' +
+                "userId='" + userId + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", userIdNumber='" + userIdNumber + '\'' +
+                ", email='" + email + '\'' +
+                ", ticketId='" + ticketId + '\'' +
+                ", ticketsBought=" + ticketsBought +
+                ", bookedSeats=" + bookedSeats +
                 '}';
     }
 
     public static class Builder{
-        private String flightId;
-        private String email;
+        private String userId;
         private String firstName;
         private String lastName;
-        private String userIdNumber;
+        private String email;
+        private String ticketId;
+        private int ticketsBought;
+        private int bookedSeats;
 
 
-
-        public Builder setFlightId(String flightId) {
-            this.flightId = flightId;
-            return this;
-        }
-        public Builder setEmail(String email) {
-            this.email = email;
+        public Builder setUserId(String userId) {
+            this.userId = userId;
             return this;
         }
 
@@ -93,16 +113,35 @@ public class User {
             this.lastName = lastName;
             return this;
         }
-        public Builder setUserIdNumber(String userIdNumber) {
-            this.userIdNumber = userIdNumber;
+
+        public Builder setEmail(String email) {
+            this.email = email;
             return this;
         }
+
+        public Builder setTicketId(String ticketId) {
+            this.ticketId = ticketId;
+            return this;
+        }
+
+        public Builder setTicketsBought(int ticketsBought) {
+            this.ticketsBought = ticketsBought;
+            return this;
+        }
+
+        public Builder setBookedSeats(int bookedSeats) {
+            this.bookedSeats = bookedSeats;
+            return this;// This is set number of booked seats
+        }
+
         public Builder copy(User user){
-            this.flightId=user.flightId;
-            this.email=user.email;
+            this.userId=user.userId;
             this.firstName=user.firstName;
             this.lastName=user.lastName;
-            this.userIdNumber=user.userIdNumber;
+            this.email=user.email;
+            this.ticketId=user.ticketId;
+            this.ticketsBought=user.ticketsBought;
+            this.bookedSeats=user.bookedSeats;
             return this;
         }
         public User builder(){
