@@ -37,7 +37,7 @@ public class Flight {
     @Override
     public String toString() {
         return "Flight{" +
-                "id= me'" + id + '\'' +
+                "id= Me'" + id + '\'' +
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +
                 '}';
