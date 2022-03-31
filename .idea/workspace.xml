@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcbabce1-efb6-4ae9-81e5-1aff85317f56" name="Changes" comment="Daniel Commit">
+    <list default="true" id="fcbabce1-efb6-4ae9-81e5-1aff85317f56" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/Entity/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/Entity/Flight.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +26,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -86,7 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648673540044</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Daniel Commit">
+      <created>1648674145471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648674145471</updated>
+    </task>
+    <task id="LOCAL-00006" summary="New Commmit">
+      <created>1648674247918</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648674247918</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Daniel Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Daniel Commit" />
+    <MESSAGE value="New Commmit" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Commmit" />
   </component>
 </project>
